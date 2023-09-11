@@ -1,17 +1,12 @@
 from __future__ import print_function, absolute_import, division
 import json
 import numpy as np
-# import matplotlib
 import os
 from PIL import Image, ImageDraw
-# from skimage.morphology import convex_hull_image
-# import matplotlib.pyplot as plt
 from collections import namedtuple
 
-data_folder = '30videos_FinalRevision'
+data_folder = 'semantic_segmentation_images_annotations/Images_and_Supervisely_Annotations/'
 folder = 'json'
-# folder_masks_mix = 'mask_mix'
-# folder_masks_mix_train = 'mask_mix_train'
 folder_masks_anatomy_inst = 'mask_instruments'
 
 case_list = os.listdir(data_folder)
@@ -78,39 +73,7 @@ for p in range(len(case_list)):
         image_Mix =  Image.new(mode = "RGB", size = (1024,768), color = 0)
 
         draw1 = ImageDraw.Draw(image_Mix)
-        
-        # # First: Cornea
-        # for j in range(len(objects)):
-        #     title = objects[j]['classTitle']
-        #     exterior = objects[j]['points']['exterior']
-        #     ext = []
-        #     for k in range(len(exterior)):
-        #         ext.append(tuple(exterior[k]))
-                
-        #     if title == 'cornea':
-        #         draw1.polygon(ext,fill=1)
-
-        # # Second: Pupil
-        # for j in range(len(objects)):
-        #     title = objects[j]['classTitle']
-        #     exterior = objects[j]['points']['exterior']
-        #     ext = []
-        #     for k in range(len(exterior)):
-        #         ext.append(tuple(exterior[k]))
-                
-        #     if title == 'pupil':
-        #         draw1.polygon(ext,fill=2)    
-
-        # # Third: Lens
-        # for j in range(len(objects)):
-        #     title = objects[j]['classTitle']
-        #     exterior = objects[j]['points']['exterior']
-        #     ext = []
-        #     for k in range(len(exterior)):
-        #         ext.append(tuple(exterior[k]))
-                
-        #     if title == 'lense':
-        #         draw1.polygon(ext,fill=3)          
+                 
 
         # Forth: Instruments
         for j in range(len(objects)):
@@ -125,65 +88,6 @@ for p in range(len(case_list)):
                 draw1.polygon(ext,fill=(255, 255, 255))             
 
         image_Mix.save(case_folder + '/' + folder_masks_anatomy_inst + '/'+name)
-
-
-    # # To test mask creation:
-    # for i in range(len(jlist)):
-    #     with open(case_json_folder + '/' + jlist[i], "r") as read_file:
-    #         data = json.load(read_file)
-    #         # print(data)
-    #     name = jlist[i][:-5]    
-    #     objects = data['objects']    
-    #     image_Mix =  Image.new(mode = "RGB", size = (1024,768), color = 0)
-
-    #     draw1 = ImageDraw.Draw(image_Mix)
-
-    #     # First: Cornea
-    #     for j in range(len(objects)):
-    #         title = objects[j]['classTitle']
-    #         exterior = objects[j]['points']['exterior']
-    #         ext = []
-    #         for k in range(len(exterior)):
-    #             ext.append(tuple(exterior[k]))
-                
-    #         if title == 'cornea':
-    #             draw1.polygon(ext,fill=(255,160,122))
-        
-    #     # Second: Pupil
-    #     for j in range(len(objects)):
-    #         title = objects[j]['classTitle']
-    #         exterior = objects[j]['points']['exterior']
-    #         ext = []
-    #         for k in range(len(exterior)):
-    #             ext.append(tuple(exterior[k]))
-                
-    #         if title == 'pupil':
-    #             draw1.polygon(ext,fill=(0,154,205))    
-
-    #     # Third: Lens
-    #     for j in range(len(objects)):
-    #         title = objects[j]['classTitle']
-    #         exterior = objects[j]['points']['exterior']
-    #         ext = []
-    #         for k in range(len(exterior)):
-    #             ext.append(tuple(exterior[k]))
-                
-    #         if title == 'lense':
-    #             draw1.polygon(ext,fill=(255,215,  0))  
-        
-    #     # Forth: Instruments
-    #     for j in range(len(objects)):
-    #         title = objects[j]['classTitle']
-    #         exterior = objects[j]['points']['exterior']
-    #         ext = []
-    #         for k in range(len(exterior)):
-    #             ext.append(tuple(exterior[k]))
-                
-    #         if title in instrument_names:
-    #             print(title)
-    #             draw1.polygon(ext,fill=(104,34,139)) 
-
-    #     image_Mix.save(case_folder + '/' +folder_masks_mix_train+'/'+name)    
 
  
 

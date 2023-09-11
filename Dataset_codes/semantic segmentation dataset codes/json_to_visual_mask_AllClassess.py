@@ -8,9 +8,8 @@ from collections import namedtuple
 import cv2
 import glob
 
-data_folder = '30videos_FinalRevision'
+data_folder = 'semantic_segmentation_images_annotations/Images_and_Supervisely_Annotations/'
 folder = 'json'
-# folder_masks_mix = 'mask_mix'
 folder_masks_mix_train = 'mask_mix_train'
 folder_masks_anatomy_inst = 'mask_anatomy_inst'
 folder_overlay = 'mask_overlay'
@@ -176,7 +175,7 @@ for p in range(len(case_list)):
         print("Re-writing in the existing folder")
 
     img_list = os.listdir(case_folder + '/img/') 
-    # mask_list = os.listdir(case_folder + '/mask_mix_train/')   
+    
 
     for i in range(len(img_list)):
              
@@ -184,17 +183,14 @@ for p in range(len(case_list)):
         mask = cv2.imread(case_folder + '/mask_mix_train/'+ img_list[i])
         mask1 = mask.copy()
         mask1[(mask==255).all(-1)] = [0,255,125]
-        # print(np.shape(mask1))
-        # print(np.unique(mask))
+
 
         alpha = 0.45
 
         output = image.copy()
         out_name = img_list[i][:-4]+'overlayed.png'
         cv2.addWeighted(image, alpha, mask1, 1 - alpha,
-                0, output)
-
-        # cv2.imwrite(case_folder + '/' + folder_overlay+ '/' +out_name, output)     
+                0, output)  
 
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image_pil = Image.fromarray(image)  

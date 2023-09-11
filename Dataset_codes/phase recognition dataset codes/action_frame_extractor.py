@@ -11,7 +11,8 @@ import random
 import csv
 from datetime import datetime, timedelta
 
-path = '/storage/workspaces/artorg_aimi/ws_00000/Negin/Cat3K_Phases/cases/'
+path = 'phase_recognition_annotations/'
+video_path = 'dataset_videos/phase_recognition/'
 
 case_list = os.listdir(path)
 case_list.sort()
@@ -48,17 +49,15 @@ def secs_to_timedelta(sec_float: float) -> str:
 
 
 def convert_frames_to_video(vid,frame_1_secs_str, duration_secs_str, idle_folder, name):
-    # cmd = f'ffmpeg -r 10 -start_number {sn} -i {path}/{imageName1}%06d.png -q:v 0 -c:v copy -y {pathOut1}/{vidName}.avi'
-    # cmd = f'ffmpeg -ss {frame_1_secs_str} -i {vid} -to {duration_secs_str} -c:v -b:v 1M -maxrate 1M {idle_folder}/{name}'
+    
     cmd = f'ffmpeg -i {vid} -ss {frame_1_secs_str} -t {duration_secs_str} -c:v copy -c:a copy {idle_folder}/{name}'
-#    cmd = f'ffmpeg -r 25 -i {path}/*.jpg {pathOut1}/{vidName}.avi'
     subprocess.check_output(cmd, shell =True)    
 
 for i in range(0,len(case_list)-4):
     case_folder = path + case_list[i]
     video_inf_csv = case_folder + '/' + case_list[i] + '_video.csv'
     video_annot_csv = case_folder + '/' + case_list[i] + '_annotations.csv'
-    video = case_folder + '/' + case_list[i] + '.mp4'
+    video = video_path + case_list[i] + '/' + case_list[i] + '.mp4'
 
     fps = csv_read_fps(video_inf_csv)
     annot, name = csv_read_annot(video_annot_csv)
@@ -77,11 +76,6 @@ for i in range(0,len(case_list)-4):
 
         action_folder = case_folder + '/' + name[j]
         print(f'action folder: {action_folder}')
-
-        # try:
-        #     shutil.rmtree(action_folder)
-        # except:
-        #     print('not found')    
 
         os.makedirs(action_folder, exist_ok = True)
 

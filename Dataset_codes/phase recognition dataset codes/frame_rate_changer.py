@@ -10,7 +10,7 @@ import random
 import csv
 from datetime import datetime, timedelta
 
-path1 = '/storage/workspaces/artorg_aimi/ws_00000/Negin/Cat3K_Phases/cases/'
+path1 = 'phase_recognition_annotations/'
 
 
 case_list = os.listdir(path1)

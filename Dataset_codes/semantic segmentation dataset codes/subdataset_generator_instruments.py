@@ -26,8 +26,8 @@ def csv_saver(save_path, a, b, c, d, i, name='anatomy'):
         df.to_csv(save_path + name + '_' + str(i)+ '_test' + '.csv')     
 
 
-save_path = '/storage/homefs/ng22l920/Codes/DeepPyramid_IJCARS/TrainIDs_Dataset_paper/'
-Cat30_dir = '//storage/homefs/ng22l920/Datasets/Cat3K_30Vids_Segmentation/30videos_FinalRevision/'
+save_path = 'TrainIDs_Dataset_paper/'
+Cat30_dir = 'semantic_segmentation_images_annotations/Images_and_Supervisely_Annotations/'
 
 image_dir = 'img/'
 mask_dir = 'mask_anatomy_inst/'

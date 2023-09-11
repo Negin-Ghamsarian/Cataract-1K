@@ -1,14 +1,11 @@
 from __future__ import print_function, absolute_import, division
 import json
 import numpy as np
-# import matplotlib
 import os
 from PIL import Image, ImageDraw
-# from skimage.morphology import convex_hull_image
-# import matplotlib.pyplot as plt
 from collections import namedtuple
 
-data_folder = '30videos_FinalRevision'
+data_folder = 'semantic_segmentation_images_annotations/Images_and_Supervisely_Annotations/'
 folder = 'json'
 folder_masks_mix = 'mask_mix'
 folder_masks_mix_train = 'mask_mix_train'
@@ -45,8 +42,7 @@ labels = [
 
 
 
-# case_list = ['case_5013', 'case_5014', 'case_5015', 'case_5016', 'case_5017']
-case_list = ['case_5014']
+
 for p in range(len(case_list)):
 
     case_folder = data_folder + '/' + case_list[p]
