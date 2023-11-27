@@ -27,7 +27,7 @@ def csv_saver(save_path, a, b, c, d, i, name='anatomy'):
 
 
 save_path = 'TrainIDs_Dataset_paper_anatomy/'
-Cat30_dir = '/storage/workspaces/artorg_aimi/ws_00000/Negin/Dataset_paper/Cat3K_30Vid_revision2023/30videos_FinalRevision/'
+Cat30_dir = 'semantic_segmentation_images_annotations/Images_and_Supervisely_Annotations/'
 
 image_dir = 'img/'
 mask_dir = 'mask_anatomy_inst/'

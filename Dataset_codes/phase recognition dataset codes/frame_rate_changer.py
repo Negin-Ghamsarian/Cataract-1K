@@ -22,8 +22,6 @@ for i in range(0,len(case_list)-4):
     case_folder = path1 + case_list[i]
     subfolders = [ f.path for f in os.scandir(case_folder) if f.is_dir() ]
 
-    # print(f'subfolders: {subfolders}')
-
     for j in range(len(subfolders)):
         phase_folder = subfolders[j]
 
