@@ -136,6 +136,7 @@ Ghamsarian, N., El-Shabrawi, Y., Nasirihaghighi, S. Putzgruber-Adamitsch, D., Zi
 
 BibTeX:
 
+```
 @inproceedings{Cataract-1K,
     author    = {Negin Ghamsarian and
                 Yosuf El-Shabrawi and
@@ -148,6 +149,9 @@ BibTeX:
     title     = {Cataract-1K: Cataract Surgery Dataset for Scene Segmentation, Phase Recognition, and Irregularity Detection (to appear)},
     
 }
+}
+```
+
 
 The datasets are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY, [![Creative Commons License](https://licensebuttons.net/l/by/4.0/80x15.png)]([https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by/4.0/))) and are created as well as maintained by Distributed Multimedia Systems Group of the Institute of Information Technology (ITEC) at Alpen-Adria Universität in Klagenfurt, Austria.
 
