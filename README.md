@@ -149,7 +149,6 @@ BibTeX:
     title     = {Cataract-1K: Cataract Surgery Dataset for Scene Segmentation, Phase Recognition, and Irregularity Detection (to appear)},
     
 }
-}
 ```
 
 
