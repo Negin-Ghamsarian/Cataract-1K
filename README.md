@@ -156,7 +156,7 @@ This license allows users of this dataset to copy, distribute, and transmit the 
 *   Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 *   Non-Commercial: You may not use the material for commercial purposes.
 
-For further legal details, please read the complete [license terms](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
+For further legal details, please read the complete [license terms](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 * * *
 
