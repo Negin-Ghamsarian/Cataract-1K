@@ -1,11 +1,5 @@
 # Cataract-1K
-\* { box-sizing: border-box; } .row { display: flex; } .responsive { width: 100%; height: auto; } /\* figure { width: 20%; border: 1px #cccccc solid; padding: 4px; margin: auto; display: inline-block; } \*/ figure { /\* width:19%; \*/ /\* border: thin silver solid; \*/ margin: 0.5em; padding: 0.5em; /\* float:left; \*/ margin:0px; text-align:center; padding:0px; display: inline-block; /\* display: flex; \*/ flex-flow: row; vertical-align: top; /\* justify-content: flex-start; \*/ } /\* .video{ display: flex; } \*/ .subfigcaption { border: 1px dotted gray; background-color: white; color: black; font-style: italic; padding: 2px; text-align: center; vertical-align: top; } figcaption { background-color: white; color: black; font-style: italic; padding: 2px; text-align: center; vertical-align: top; } /\* figure { float: right; width: 20%; text-align: center; font-style: italic; font-size: smaller; text-indent: 0; border: thin silver solid; margin: 0.5em; padding: 0.5em; } img.scaled { width: 100%; } \*/ /\* h1 { color: blue; font-family: verdana; font-size: 300%; } p { color: red; font-family: courier; font-size: 160%; } \*/ "Cataract-1K: Cataract Surgery Dataset for Scene Segmentation, Phase Recognition, and Irregularity Detection"   
 
-ITEC Datasets
-
-Laparoscopy [Smoke\_Cholec80](../../Smoke_cholec80/index.html) [LapGyn4](../../LapGyn4/index.html) [SurgicalActions160](../../SurgicalActions160/index.html) [GLENDA](../../GLENDA/index.html) [ENID](../../ENID/index.html)
-
-Ophthalmology [Cataract-21](../cat-21/index.html) [Cataract-101](../cat-101/index.html) [IrisPupilSeg](../iris_pupil_seg/index.html) [CatInstSeg](../InSegCat/index.html) [CatRelComp](../CatRelevanceCompression/index.html) [CatRelDet](../relevant-cat-actions/index.html) [LensID](../LensID/index.html)
 
 Dataset release for "Cataract-1K: Cataract Surgery Dataset for Scene Segmentation, Phase Recognition, and Irregularity Detection"
 =================================================================================================================================
