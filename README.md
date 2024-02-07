@@ -149,7 +149,7 @@ BibTeX:
     
 }
 
-The datasets are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY, [![Creative Commons License](https://licensebuttons.net/l/by-nc/4.0/80x15.png)]([https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by/4.0/))) and are created as well as maintained by Distributed Multimedia Systems Group of the Institute of Information Technology (ITEC) at Alpen-Adria Universität in Klagenfurt, Austria.
+The datasets are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY, [![Creative Commons License](https://licensebuttons.net/l/by/4.0/80x15.png)]([https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by/4.0/))) and are created as well as maintained by Distributed Multimedia Systems Group of the Institute of Information Technology (ITEC) at Alpen-Adria Universität in Klagenfurt, Austria.
 
 This license allows users of this dataset to copy, distribute, and transmit the work under the following conditions:
 
