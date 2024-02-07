@@ -166,7 +166,7 @@ For further legal details, please read the complete [license terms](https://crea
 Download
 --------
 
-If you agree to above conditions, you are free to download:
+If you agree to the above conditions, you are free to download the following:
 
 *   [Catatact-1k](./downloads/Dataset_phase.zip) ( GB)
 *   [Phase Recognition Set](./downloads/Dataset_phase.zip) ( GB)
@@ -176,4 +176,8 @@ If you agree to above conditions, you are free to download:
 
 * * *
 
-Copyright @ [ITEC Institute](https://itec.aau.at/), [AAU Klagenfurt](https://www.aau.at/).
+## Acknowledgments
+
+This work was supported in part by the Haag-Streit Foundation, Switzerland; and in part by the Austrian Science Fund (FWF) under Grant P 31486-N31 and P 32010-N38.
+
+
