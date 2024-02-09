@@ -21,13 +21,13 @@ As shown in **Figure 1**, a regular cataract surgery can include twelve action p
 We provide a large annotated dataset to enable comprehensive studies on deep-learning-based phase recognition in cataract surgery videos. **Table 1** visualizes the phase annotations corresponding to 56 normal cataract surgery videos, with a spatial resolution of (1024,768), a temporal resolution of 30 fps, an average duration of 6.45 minutes, and a standard deviation of 2.04. This dataset comprises patients with an average age of 75 years, ranging from 51 to 93 years, and a standard deviation of 8.69 years. The videos present in the phase recognition dataset correspond to surgeries executed by surgeons with an average experience of 8929 surgeries and a standard deviation of 6350 surgeries. Frame-level annotations for phase recognition are provided in CSV files, determining the first and the last frames for all action phases per video. The preprocessing codes to extract all action and idle phases from a video using the CSV files are provided in the GitHub repository of the paper. Furthermore, **Figure 2** demonstrates the total duration of the annotations corresponding to each phase from 56 videos.
 
   
-<img src="./Dataset_webpage/imgs/Table1.png" alt="Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds)." width="1000">
+<img src="./Dataset_webpage/imgs/Table1.png" alt="Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization." width="1000">
 
-**Table 1.** Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds).
+**Table 1.** Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization.
 
   
 
-![](imgs/pie_chart.png)
+<img src="./Dataset_webpage/imgs/pie_chart.png" alt="Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization." width="1000">
 
 **Figure 2.** Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds).
 
