@@ -72,10 +72,7 @@ This dataset contains two small subsets of major intra-operative irregularities 
 
 Disclaimer
 ----------
-
-The datasets are exclusively provided for **scientific research purposes** and as such cannot be used commercially or for any other purpose. If any other purpose is intended, you may directly contact the originator of the dataset, [Prof. Yosuf El-Shabrawi](mailto:Yosuf.El-Shabrawi@kabeg.at), or [Assoc. Prof. DI Dr. Klaus Schoeffmann](mailto:ks@itec.aau.at).  
-  
-Besides, a reference must be made to the following publication when this dataset is used in any academic and research reports:  
+A reference must be made to the following publication when this dataset is used in any academic and research reports:  
   
 Ghamsarian, N., El-Shabrawi, Y., Nasirihaghighi, S. Putzgruber-Adamitsch, D., Zinkernagel, M., Wolf, S., Schoeffmann, K., Sznitman, R.: Cataract-1K: Cataract Surgery Dataset for Scene Segmentation, Phase Recognition, and Irregularity Detection (to appear)  
   
@@ -98,7 +95,7 @@ BibTeX:
 ```
 
 
-The datasets are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY, [![Creative Commons License](https://licensebuttons.net/l/by/4.0/80x15.png)]([https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by/4.0/))) and are created as well as maintained by Distributed Multimedia Systems Group of the Institute of Information Technology (ITEC) at Alpen-Adria Universität in Klagenfurt, Austria.
+The datasets are licensed under Creative Commons 4.0 International (CC BY, [![Creative Commons License](https://licensebuttons.net/l/by/4.0/80x15.png)]([https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by/4.0/))) and are created as well as maintained by Distributed Multimedia Systems Group of the Institute of Information Technology (ITEC) at Alpen-Adria Universität in Klagenfurt, Austria.
 
 This license allows users of this dataset to copy, distribute, and transmit the work under the following conditions:
 
