@@ -30,28 +30,26 @@ We provide a large annotated dataset to enable comprehensive studies on deep-lea
 
 Semantic segmentation dataset
 -----------------------------
-
-<img src="./Dataset_webpage/imgs/Table2.png" alt="Number of instances and presence in the frames (% of total number of frames in each fold)." width="1000">
-
 **Figure 3** visualizes pixel-level annotations for relevant anatomical objects and instruments.
 
   
 
-![](imgs/Figure3.png)
+<img src="./Dataset_webpage/imgs/Figure3.png" alt="Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects." width="1000">
 
-**Figure 3.** Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different object.
+**Figure 3.** Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects.
 
 The semantic segmentation dataset includes frames from 30 regular videos of cataract surgery with a spatial resolution of (1024,768). Frame extraction is performed at the rate of one frame per five seconds. Subsequently, the frames featuring very harsh motion blur or out-of-scene iris are excluded from the dataset. We provide pixel-level annotations for three relevant anatomical structures, including iris, pupil, and intraocular lens, as well as nine instruments used in regular cataract surgeries including slit/incision knife, gauge, spatula, capsulorhexis cystome, phacoemulsifier tip, irrigation-aspiration, lens injector, capsulorhexis forceps, and katana forceps. All annotations are performed using polygons in the [Supervisely platform](https://supervisely.com/), and exported as JSON files. Within this dataset, the included individuals possess an average age of 74.5 years, spanning from 51 to 90 years, with a standard deviation of 8.43 years. Additionally, the videos contained in the phase recognition dataset depict surgeries conducted by surgeons whose collective experience averages 8033 surgeries, with a standard deviation of 3894 surgeries. The provided dataset enables a reliable study of segmentation performance for relevant anatomical structures, binary instruments, and multi-class instruments. Pixel-level annotations are provided in two formats: (1) Supervisely format, for which we provide Python codes for mask creation from JSON files, and (2) COCO format, which also provides bounding box annotations for all pixel-level annotated objects. The latter annotations can be used for object localization problems. The preprocessing codes to create training masks for "anatomy plus instrument segmentation", "binary instrument segmentation", and "multi-class instrument segmentation" are provided in the GitHub repository of the paper. We have formed five folds with patient-wise separation, meaning every fold consists of the frames corresponding to six distinct videos. **Table 2** compares the number of instances and their appearance percentage in the frames. Besides, **Table 3** lists the average number of pixels per frame corresponding to each label.
 
   
 
-![](imgs/Table2.png)
+
+<img src="./Dataset_webpage/imgs/Table2.png" alt="Number of instances and presence in the frames (% of total number of frames in each fold)." width="1000">
 
 **Table 2.** Number of instances and presence in the frames (% of total number of frames in each fold).
 
   
 
-![](imgs/Table3.png)
+<img src="./Dataset_webpage/imgs/Table3.png" alt="Average pixels corresponding to different labels per frame." width="1000">
 
 **Table 3.** Average pixels corresponding to different labels per frame.
 
@@ -65,7 +63,8 @@ This dataset contains two small subsets of major intra-operative irregularities 
 
   
 
-![](imgs/Figure4.png)
+<img src="./Dataset_webpage/imgs/Figure4.png" alt="Intra-operative irregularities in cataract surgery." width="1000">
+
 
 **Figure 4.** Intra-operative irregularities in cataract surgery.
 
