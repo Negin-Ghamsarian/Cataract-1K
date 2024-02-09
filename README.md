@@ -1,24 +1,24 @@
 Dataset release for "Cataract-1K: Cataract Surgery Dataset for Scene Segmentation, Phase Recognition, and Irregularity Detection"
 =================================================================================================================================
 
-The Cataract-1K dataset consists of 1000 videos of cataract surgeries performed in the eye clinic of Klinikum Klagenfurt from 2021 to 2023. From these videos, we provide surgical phase annotations for 56 regular videos and relevant anatomical plus instrument pixel-level annotations for 2256 frames out of 30 cataract surgery videos. Furthermore, we provide a small subset of surgeries with two major irregularities including "pupil reaction" and "IOL rotation" to support further research on irregularity detection in cataract surgery. Except for the annotated videos and images, the remaining videos in Cataract-1K dataset are encoded with a temporal resolution of 25 fps and the spatial resolution of (512,324). Besides, we assess the surgeons' skills by considering the cumulative count of their completed surgeries, which spans from 1000 to over 40000 procedures in the Cataract-1K dataset. We delineate the annotation procedures for each subset within the dataset in the following paragraphs.
+The Cataract-1K dataset consists of 1000 videos of cataract surgeries performed in the eye clinic of Klinikum Klagenfurt from 2021 to 2023. From these videos, we provide surgical phase annotations for 56 regular videos and relevant anatomical plus instrument pixel-level annotations for 2256 frames out of 30 cataract surgery videos. Furthermore, we provide a small subset of surgeries with two major irregularities including "pupil reaction" and "IOL rotation" to support further research on irregularity detection in cataract surgery. Except for the annotated videos and images, the remaining videos in the Cataract-1K dataset are encoded with a temporal resolution of 25 fps and a spatial resolution of (512,324). Besides, we assess the surgeons' skills by considering the cumulative count of their completed surgeries, which spans from 1000 to over 40000 procedures in the Cataract-1K dataset. We delineate the annotation procedures for each subset within the dataset in the following paragraphs.
 
 Phase recognition dataset
 -------------------------
 
-A regular cataract surgery can include twelve action phases, including incision, viscoelastic, capsulorhexis, hydrodissection, phacoemulsification, irrigation-aspiration, capsule polishing, lens implantation, lens positioning, viscoelastic-suction, anterior-chamber flushing, and tonifying/antibiotics. Besides, the idle phases refer to the time spans in the middle of a phase or between two phases when the surgeons mainly change the instruments and no instrument is visible inside the frames.
+A regular cataract surgery can include twelve action phases, including incision, viscoelastic, capsulorhexis, hydro-dissection, phacoemulsification, irrigation-aspiration, capsule polishing, lens implantation, lens positioning, viscoelastic-suction, anterior-chamber flushing, and tonifying/antibiotics. Besides, the idle phases refer to the time spans in the middle of a phase or between two phases when the surgeons mainly change the instruments and no instrument is visible inside the frames.
 
 
 We provide a large annotated dataset to enable comprehensive studies on deep-learning-based phase recognition in cataract surgery videos. **Table 1** visualizes the phase annotations corresponding to 56 normal cataract surgery videos, with a spatial resolution of (1024,768), a temporal resolution of 30 fps, an average duration of 6.45 minutes, and a standard deviation of 2.04. This dataset comprises patients with an average age of 75 years, ranging from 51 to 93 years, and a standard deviation of 8.69 years. The videos present in the phase recognition dataset correspond to surgeries executed by surgeons with an average experience of 8929 surgeries and a standard deviation of 6350 surgeries. Frame-level annotations for phase recognition are provided in CSV files, determining the first and the last frames for all action phases per video. The preprocessing codes to extract all action and idle phases from a video using the CSV files are provided in the GitHub repository of the paper. Furthermore, **Figure 1** demonstrates the total duration of the annotations corresponding to each phase from 56 videos.
 
   
-<img src="./Dataset_webpage/imgs/Table1.png" alt="Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization." width="1000">
+<img src="./Dataset_webpage/imgs/Table1.png" alt=" Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization." width="1000">
 
 **Table 1.** Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization.
 
   
 
-<img src="./Dataset_webpage/imgs/pie_chart.png" alt="Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds)." width="800">
+<img src="./Dataset_webpage/imgs/pie_chart.png" alt=" Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds)." width="800">
 
 **Figure 1.** Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds).
 
@@ -28,7 +28,7 @@ Semantic segmentation dataset
 
   
 
-<img src="./Dataset_webpage/imgs/Figure3.png" alt="Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects." width="1000">
+<img src="./Dataset_webpage/imgs/Figure3.png" alt=" Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects." width="1000">
 
 **Figure 2.** Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects.
 
@@ -37,7 +37,7 @@ The semantic segmentation dataset includes frames from 30 regular videos of cata
   
 
 
-<img src="./Dataset_webpage/imgs/Table2.png" alt="Number of instances and presence in the frames (% of total number of frames in each fold)." width="1000">
+<img src="./Dataset_webpage/imgs/Table2.png" alt=" Number of instances and presence in the frames (% of the total number of frames in each fold)." width="1000">
 
 **Table 2.** Number of instances and presence in the frames (% of total number of frames in each fold).
 
