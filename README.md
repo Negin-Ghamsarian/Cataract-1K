@@ -104,11 +104,12 @@ Download
 
 If you agree to the above conditions, you are free to download the following:
 
-*   [Catatact-1k](./downloads/Dataset_phase.zip) ( GB)
-*   [Phase Recognition Set](./downloads/Dataset_phase.zip) ( GB)
-*   [Semantic Segmentation Set](./downloads/Dataset_lens.zip) ( MB)
-*   [Irregularity Detection Set](./downloads/Dataset_pupil.zip) ( MB).
-*   [Dataset Preparation Codes](https://github.com/Negin-Ghamsarian/Cataract-1K) ( MB).
+*   [Catatact-1k](./downloads/Dataset_phase.zip) (89.9 GB)
+*   [Phase Recognition Set](./downloads/Dataset_phase.zip) (3.87 GB)
+*   [Semantic Segmentation Set](./downloads/Dataset_lens.zip) (6.77 GB)
+*   [Lens Irregularity Set](./downloads/Dataset_pupil.zip) (1.49 MB)
+*   [Pupil Reaction Set](./downloads/Dataset_pupil.zip) (3.29 MB)
+*   [Dataset Preparation Codes](https://github.com/Negin-Ghamsarian/Cataract-1K).
 
 * * *
 
