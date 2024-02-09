@@ -91,7 +91,7 @@ BibTeX:
 
 The datasets are licensed under Creative Commons 4.0 International (CC BY, [![Creative Commons License](https://licensebuttons.net/l/by/4.0/80x15.png)]([https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by/4.0/))).
 
-This license allows users of this dataset to copy, distribute, and transmit the work under the following condition:
+This license allows users of this dataset to copy, distribute, and transmit the work under the following conditions:
 
 *   Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
@@ -104,11 +104,11 @@ Download
 
 If you agree to the above conditions, you are free to download the following:
 
-*   [Catatact-1k](./downloads/Dataset_phase.zip) (89.9 GB)
-*   [Phase Recognition Set](./downloads/Dataset_phase.zip) (3.87 GB)
-*   [Semantic Segmentation Set](./downloads/Dataset_lens.zip) (6.77 GB)
-*   [Lens Irregularity Set](./downloads/Dataset_pupil.zip) (1.49 MB)
-*   [Pupil Reaction Set](./downloads/Dataset_pupil.zip) (3.29 MB)
+*   [Catatact-1k](https://www.synapse.org/#!Synapse:syn53404507) (89.9 GB)
+*   [Phase Recognition Set](https://www.synapse.org/#!Synapse:syn53395146) (3.87 GB)
+*   [Semantic Segmentation Set](https://www.synapse.org/#!Synapse:syn53395479) (6.77 GB)
+*   [Lens Irregularity Set](https://www.synapse.org/#!Synapse:syn53395131) (1.49 MB)
+*   [Pupil Reaction Set](https://www.synapse.org/#!Synapse:syn53395402) (3.29 MB)
 *   [Dataset Preparation Codes](https://github.com/Negin-Ghamsarian/Cataract-1K)
 
 * * *
