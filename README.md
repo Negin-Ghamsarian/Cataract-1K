@@ -91,7 +91,7 @@ BibTeX:
 
 The datasets are licensed under Creative Commons 4.0 International (CC BY, [![Creative Commons License](https://licensebuttons.net/l/by/4.0/80x15.png)]([https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by/4.0/))).
 
-This license allows users of this dataset to copy, distribute, and transmit the work under the following conditions:
+This license allows users of this dataset to copy, distribute, and transmit the work under the following condition:
 
 *   Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
