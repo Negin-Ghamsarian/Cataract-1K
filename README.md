@@ -34,6 +34,8 @@ We provide a large annotated dataset to enable comprehensive studies on deep-lea
 Semantic segmentation dataset
 -----------------------------
 
+<img src="./Dataset_webpage/imgs/Table2.png" alt="Number of instances and presence in the frames (% of total number of frames in each fold)." width="1000">
+
 **Figure 3** visualizes pixel-level annotations for relevant anatomical objects and instruments.
 
   
