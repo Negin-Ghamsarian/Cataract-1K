@@ -6,19 +6,10 @@ The Cataract-1K dataset consists of 1000 videos of cataract surgeries performed 
 Phase recognition dataset
 -------------------------
 
-As shown in **Figure 1**, a regular cataract surgery can include twelve action phases, including incision, viscoelastic, capsulorhexis, hydrodissection, phacoemulsification, irrigation-aspiration, capsule polishing, lens implantation, lens positioning, viscoelastic-suction, anterior-chamber flushing, and tonifying/antibiotics. Besides, the idle phases refer to the time spans in the middle of a phase or between two phases when the surgeons mainly change the instruments and no instrument is visible inside the frames.
+A regular cataract surgery can include twelve action phases, including incision, viscoelastic, capsulorhexis, hydrodissection, phacoemulsification, irrigation-aspiration, capsule polishing, lens implantation, lens positioning, viscoelastic-suction, anterior-chamber flushing, and tonifying/antibiotics. Besides, the idle phases refer to the time spans in the middle of a phase or between two phases when the surgeons mainly change the instruments and no instrument is visible inside the frames.
 
-  
-<video width="320" height="240" controls>
-  <source src="./Dataset_webpage/videos/case_4695_IA.mp4" type="video/mp4">
-</video>
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/dQw4w9WgXcQ)](https://youtu.be/dQw4w9WgXcQ)
-**Figure 1.** Different phases in a regular cataract surgery
-
-  
-
-We provide a large annotated dataset to enable comprehensive studies on deep-learning-based phase recognition in cataract surgery videos. **Table 1** visualizes the phase annotations corresponding to 56 normal cataract surgery videos, with a spatial resolution of (1024,768), a temporal resolution of 30 fps, an average duration of 6.45 minutes, and a standard deviation of 2.04. This dataset comprises patients with an average age of 75 years, ranging from 51 to 93 years, and a standard deviation of 8.69 years. The videos present in the phase recognition dataset correspond to surgeries executed by surgeons with an average experience of 8929 surgeries and a standard deviation of 6350 surgeries. Frame-level annotations for phase recognition are provided in CSV files, determining the first and the last frames for all action phases per video. The preprocessing codes to extract all action and idle phases from a video using the CSV files are provided in the GitHub repository of the paper. Furthermore, **Figure 2** demonstrates the total duration of the annotations corresponding to each phase from 56 videos.
+We provide a large annotated dataset to enable comprehensive studies on deep-learning-based phase recognition in cataract surgery videos. **Table 1** visualizes the phase annotations corresponding to 56 normal cataract surgery videos, with a spatial resolution of (1024,768), a temporal resolution of 30 fps, an average duration of 6.45 minutes, and a standard deviation of 2.04. This dataset comprises patients with an average age of 75 years, ranging from 51 to 93 years, and a standard deviation of 8.69 years. The videos present in the phase recognition dataset correspond to surgeries executed by surgeons with an average experience of 8929 surgeries and a standard deviation of 6350 surgeries. Frame-level annotations for phase recognition are provided in CSV files, determining the first and the last frames for all action phases per video. The preprocessing codes to extract all action and idle phases from a video using the CSV files are provided in the GitHub repository of the paper. Furthermore, **Figure 1** demonstrates the total duration of the annotations corresponding to each phase from 56 videos.
 
   
 <img src="./Dataset_webpage/imgs/Table1.png" alt="Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization." width="1000">
@@ -29,17 +20,17 @@ We provide a large annotated dataset to enable comprehensive studies on deep-lea
 
 <img src="./Dataset_webpage/imgs/pie_chart.png" alt="Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization." width="1000">
 
-**Figure 2.** Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds).
+**Figure 1.** Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds).
 
 Semantic segmentation dataset
 -----------------------------
-**Figure 3** visualizes pixel-level annotations for relevant anatomical objects and instruments.
+**Figure 2** visualizes pixel-level annotations for relevant anatomical objects and instruments.
 
   
 
 <img src="./Dataset_webpage/imgs/Figure3.png" alt="Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects." width="1000">
 
-**Figure 3.** Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects.
+**Figure 2.** Visualization of pixel-based annotations corresponding to relevant anatomical structures and instruments in cataract surgery and the challenges associated with different objects.
 
 The semantic segmentation dataset includes frames from 30 regular videos of cataract surgery with a spatial resolution of (1024,768). Frame extraction is performed at the rate of one frame per five seconds. Subsequently, the frames featuring very harsh motion blur or out-of-scene iris are excluded from the dataset. We provide pixel-level annotations for three relevant anatomical structures, including iris, pupil, and intraocular lens, as well as nine instruments used in regular cataract surgeries including slit/incision knife, gauge, spatula, capsulorhexis cystome, phacoemulsifier tip, irrigation-aspiration, lens injector, capsulorhexis forceps, and katana forceps. All annotations are performed using polygons in the [Supervisely platform](https://supervisely.com/), and exported as JSON files. Within this dataset, the included individuals possess an average age of 74.5 years, spanning from 51 to 90 years, with a standard deviation of 8.43 years. Additionally, the videos contained in the phase recognition dataset depict surgeries conducted by surgeons whose collective experience averages 8033 surgeries, with a standard deviation of 3894 surgeries. The provided dataset enables a reliable study of segmentation performance for relevant anatomical structures, binary instruments, and multi-class instruments. Pixel-level annotations are provided in two formats: (1) Supervisely format, for which we provide Python codes for mask creation from JSON files, and (2) COCO format, which also provides bounding box annotations for all pixel-level annotated objects. The latter annotations can be used for object localization problems. The preprocessing codes to create training masks for "anatomy plus instrument segmentation", "binary instrument segmentation", and "multi-class instrument segmentation" are provided in the GitHub repository of the paper. We have formed five folds with patient-wise separation, meaning every fold consists of the frames corresponding to six distinct videos. **Table 2** compares the number of instances and their appearance percentage in the frames. Besides, **Table 3** lists the average number of pixels per frame corresponding to each label.
 
@@ -69,7 +60,7 @@ This dataset contains two small subsets of major intra-operative irregularities 
 <img src="./Dataset_webpage/imgs/Figure4.png" alt="Intra-operative irregularities in cataract surgery." width="1000">
 
 
-**Figure 4.** Intra-operative irregularities in cataract surgery.
+**Figure 3.** Intra-operative irregularities in cataract surgery.
 
 * * *
 
