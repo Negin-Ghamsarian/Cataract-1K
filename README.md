@@ -18,7 +18,7 @@ We provide a large annotated dataset to enable comprehensive studies on deep-lea
 
   
 
-<img src="./Dataset_webpage/imgs/pie_chart.png" alt="Visualizations of phase annotations for 56 normal cataract surgeries. The durations of the videos are different and normalized for better visualization." width="1000">
+<img src="./Dataset_webpage/imgs/pie_chart.png" alt="Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds)." width="800">
 
 **Figure 1.** Total duration of the annotated phases in the 56 annotated cataract surgery videos (in seconds).
 
